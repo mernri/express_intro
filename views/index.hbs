@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+{{!-- 
+Quand j'utilie la methode GET => 
+    - Quand je met le nom dans l'input name et que je valide, il apparaît dans la page et dans l'URL
+Quand j'utilise la methode POST =>
+    - Qaund je met le nom dans l'input name et que je valide, il apparaît dans la page mais pas dans l'URL --}}
+    <h1> Bonjour {{user.name}} ! </h1>
+    <form action="/search" method="POST">
+        <label for="">name</label>
+        <input type="text" name="name" id="">
+        <label for="">Start-Date</label>
+        <input type="date" name="start-date" id="">
+        <label for="">End-Date</label>
+        <input type="date" name="end-date" id="">
+        <button type="submit">SEARCH</button>
+    </form>
+
+</body>
+
+</html>
